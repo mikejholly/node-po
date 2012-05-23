@@ -4,6 +4,7 @@ var PO = require('../lib/po.js')
 
 PO.load('text.po', function(po) {
   assert.equal(po.headers['Plural-Forms'], 'nplurals=2; plural=(n!=1);', 'Parsed "Plural-Forms" header.');
+  assert.equal(po.errors.length, 3, 'Two lines before headers and one duplicate header found.');
   assert.equal(po.items.length, 67, 'Successfully parsed 67 items.');
   var item = po.items.pop();
   assert.equal(item.comments.length, 1, 'Parsed item comment.');
