@@ -5,6 +5,7 @@
   "author"        : "Mike Holly",
   "homepage"      : "http://github.com/mikejholly/node-po",
   "repository"    : {"type" : "git", "url" : "http://github.com/mikejholly/node-po.git"},
+  "contributors"  : ["dodo (https://github.com/dodo)"],
   "dependencies"  : [],
   "main"          : "./lib/po",
   "keywords"      : ["i18n", "l10n", "gettext", "mo", "po"]
